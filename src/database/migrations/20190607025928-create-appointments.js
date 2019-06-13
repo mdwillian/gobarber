@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('appoitments', {
+    return queryInterface.createTable('appointments', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -27,7 +27,7 @@ module.exports = {
         onDelete: 'CASCADE',
         allowNull: false
       },
-      create_at: {
+      created_at: {
         allowNull: false,
         type: Sequelize.DATE
       },
